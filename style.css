@@ -12,7 +12,7 @@ img {
 }
 
 header {
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     color: white;
 }
 
@@ -25,15 +25,42 @@ header {
 
 header > nav {
     display: flex;
-    justify-content: space-around;
+    background-color: blue;
+    justify-content: center;
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+    width: 25%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutlinkborder,
+.experiencelinkborder,
+.amenitieslinkborder,
+.visitlinkborder {
+    border: solid 1.5px gold;
 }
 
 .hero {
     height: 75vh;
-    background-image: url(images/roomimage1.png);
+    background-image: url(images/roomImage1.png);
     background-size: cover;
     background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.logo:hover {
+    background-color: rgb(224, 241, 255);
+    transition: all 200ms ease;
+}
+
+nav > a:hover {
+    background-color: navy;
+    transition: all 200ms ease;
 }
