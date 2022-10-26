@@ -1,9 +1,15 @@
 * {
     box-sizing: border-box;
 }
+
 body {
     margin:0;
     font-size: 16px;
+    font-family: Aldrich;
+    background-image: url(images/roomImage1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 img {
@@ -14,6 +20,7 @@ img {
 header {
     background-color: rgb(255, 255, 255);
     color: white;
+
 }
 
 .logo {
@@ -23,48 +30,90 @@ header {
     height: 15vh;
 }
 
+/* .scrolllock {
+    position: fixed;
+    top: 0;
+    z-index: 1030;
+    width: 100vw;
+} */
+
 header > nav {
     display: flex;
-    background-color: blue;
+    background-color: #0c0c4a;
     justify-content: center;
 }
 
-nav > a {
+header > nav > a {
     color: white;
     text-decoration: none;
-    width: 25%;
+    width: 25vw;
     height: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.aboutlinkborder,
-.experiencelinkborder,
-.amenitieslinkborder,
-.visitlinkborder {
+.aboutlink,
+.experiencelink,
+.amenitieslink,
+.visitlink {
     border: solid 1.5px gold;
 }
 
+.currentpage {
+    color: gold;
+}
+
 .hero {
-    height: 75vh;
-    background-image: url(images/roomImage1.png);
-    background-size: cover;
-    background-attachment: fixed;
+    height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+/* .logo {
+    background-color: rgba(255,255,255,1);
+} */
+
 .logo:hover {
     background-color: rgb(224, 241, 255);
     transition: all 200ms ease;
 }
 
-nav > a:hover {
-    background-color: navy;
+header > nav > a:hover {
+    background-color: #28aae0;
+    color: gold;
     transition: all 200ms ease;
 }
 
 .allContent {
-    margin: 5vw;
+    margin: 0 5vw;
+}
+
+h2 {
+    font-size: 40px;
+    width: 100%;
+    background-color: #0c0c4a;
+    color: white;
+    padding: 15px 0;
+    border: solid 2px gold;
+    text-align: center;
+    justify-content: center;
+}
+
+.contentBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentSection {
+    width: 48%;
+    background-color: #0c0c4a;
+    border: solid 2px gold;
+    color: white;
+    padding: 10px;
+}
+
+.contentSection > a {
+    border: solid 2px gold;
 }
