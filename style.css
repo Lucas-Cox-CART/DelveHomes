@@ -7,9 +7,10 @@ body {
     font-size: 16px;
     font-family: Aldrich;
     background-image: url(images/roomImage1.png);
-    background-size: cover;
+    background-size: 200vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position-x: -30px;
 }
 
 img {
@@ -35,6 +36,7 @@ header {
     top: 0;
     z-index: 1030;
     width: 100vw;
+    overflow: hidden;
 } */
 
 header > nav {
@@ -46,18 +48,13 @@ header > nav {
 header > nav > a {
     color: white;
     text-decoration: none;
+    border: solid 1px gold;
     width: 25vw;
-    height: 5vh;
+    height: 7vh;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.aboutlink,
-.experiencelink,
-.amenitieslink,
-.visitlink {
-    border: solid 1.5px gold;
+    font-size: 20px;
 }
 
 .currentpage {
@@ -69,6 +66,19 @@ header > nav > a {
     display: flex;
     align-items: center;
     justify-content: center;
+
+}
+
+.herotext {
+    background-color: rgba(12,12,74,0.65);
+    width: 28%;
+    color: white;
+    border-radius: 2em;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.25);
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
 }
 
 /* .logo {
@@ -115,5 +125,28 @@ h2 {
 }
 
 .contentSection > a {
+    color: white;
+    text-decoration: none;
     border: solid 2px gold;
+    padding: 5px;
+}
+
+.contentSectionBig {
+    background-color: #0c0c4a;
+    border: solid 2px gold;
+    color: white;
+    padding: 10px;
+}
+
+.contentSection > a:hover {
+    background-color: #28aae0;
+    transition: all 200ms ease;;
+}
+
+footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    background-color: #0c0c4a;
+    color: white;
 }
