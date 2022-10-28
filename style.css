@@ -68,7 +68,6 @@ header > nav > a {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .herotext {
@@ -136,7 +135,7 @@ h2 {
 
 .contentSection > * {
     width: 75%;
-    margin: auto 10px;
+    margin: 10px;
 }
 
 .contentSection > a {
@@ -152,11 +151,32 @@ h2 {
     color: white;
     padding: 10px;
     margin-top: 35px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contentSection > a:hover {
     background-color: #28aae0;
     transition: all 200ms ease;;
+}
+
+.contentSectionBig > img {
+    border: solid 2px gold;
+    margin-bottom: 20px;
+}
+
+.contentSectionBig > * {
+    width: 75%;
+    margin: 10px;
+}
+
+.contentSectionBig > a {
+    color: white;
+    text-decoration: none;
+    border: solid 2px gold;
+    padding: 5px;
 }
 
 footer {
@@ -219,5 +239,31 @@ p {
     padding: 10px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.contentSection3 > img {
+    border: solid 2px gold;
+    margin-bottom: 20px;
+}
+
+.contentSection3 > * {
+    width: 75%;
+    margin: 10px;
+}
+
+.contentSection3 > a {
+    color: white;
+    text-decoration: none;
+    border: solid 2px gold;
+    padding: 5px;
+}
+
+.displayFlex {
+    display: flex;
+}
+
+.setCenter {
+    justify-content: center;
     align-items: center;
 }
