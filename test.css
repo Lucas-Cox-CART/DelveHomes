@@ -11,11 +11,16 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position-x: -30px;
+    font-size: 20px;
 }
 
 img {
     max-width: 75%;
     max-height: 75%;
+}
+
+.member {
+    max-width: 233px;
 }
 
 header {
@@ -126,7 +131,7 @@ header > nav > a:hover {
     color: white;
     border: solid 2px gold;
     margin: 5px;
-    padding: 5px;
+    /* padding: 5px; */
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -136,7 +141,7 @@ header > nav > a:hover {
 .contentSection > img {
     border: solid 2px gold;
     margin-bottom: 20px;
-    margin-top: 10%;
+    margin-top: 4vh;
 }
 
 .contentSection > a:hover {
@@ -152,13 +157,26 @@ header > nav > a:hover {
     margin-bottom: 10%;
 }
 
+.contentSection > p {
+    padding: 0 15px;
+}
+
 
 h2,
 h3,
 h4,
 h5,
 h6 {
+    font-size: 2rem;
     text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h1 {
+    font-size: 3rem;
 }
 
 footer {
@@ -206,6 +224,12 @@ footer {
 .bottomContact > p > a:hover {
     color: gold;
     transition: all 200ms ease;
+}
+
+.gallery {
+    margin-right: 45px;
+    border: solid 1px gold;
+    max-width: 233px;
 }
 
 @media (max-width: 420px) {
