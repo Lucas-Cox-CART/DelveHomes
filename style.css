@@ -282,8 +282,13 @@ p {
 }
 
 .gallery {
+    width: 75%;
     margin-right: 45px;
     border: solid 1px gold;
+}
+
+.gallery > * {
+    margin: 0, auto;
 }
 
 @media (max-width: 420px){

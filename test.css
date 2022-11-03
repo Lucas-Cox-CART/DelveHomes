@@ -23,6 +23,12 @@ img {
     max-width: 233px;
 }
 
+.imgWrap {
+    width: 80%;
+    display: flex;
+    overflow-x: scroll;
+}
+
 header {
     background-color: rgb(255, 255, 255);
     color: white;
@@ -113,6 +119,12 @@ header > nav > a:hover {
     flex-wrap: wrap;
 }
 
+.content75Box {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .contentHalfBox {
     width: 50%;
     display: flex;
@@ -125,13 +137,19 @@ header > nav > a:hover {
     flex-wrap: wrap;
 }
 
+.contentFourthBox {
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .contentSection {
     width: 100%;
     background-color: #0c0c4a;
     color: white;
     border: solid 2px gold;
     margin: 5px;
-    /* padding: 5px; */
+    padding: 5px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -177,6 +195,10 @@ h2 {
 
 h1 {
     font-size: 3rem;
+}
+
+form {
+    padding: 0 15px;
 }
 
 footer {
@@ -242,4 +264,13 @@ footer {
     header > nav > a {
         font-size: 14px;
     }
+}
+
+.dialogFlex /*Flex daddy*/ {
+    display: flex;
+}
+
+.buttonRules /*Flex son*/ {
+    justify-content: center;
+    align-self: center;
 }
