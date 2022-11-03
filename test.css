@@ -119,6 +119,12 @@ header > nav > a:hover {
     flex-wrap: wrap;
 }
 
+.content66Box {
+    width: 66.666%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .content75Box {
     width: 75%;
     display: flex;
@@ -201,6 +207,18 @@ form {
     padding: 0 15px;
 }
 
+input {
+    background-color: #0c0c4a;
+    color: white;
+    font-family: Aldrich;
+    border: solid 2px gold;
+}
+
+input:hover {
+    background-color: #28aae0;
+    transition: all 200ms ease;
+}
+
 footer {
     display: flex;
     flex-direction: row-reverse;
@@ -266,11 +284,14 @@ footer {
     }
 }
 
-.dialogFlex /*Flex daddy*/ {
+.formFlex /*Flex daddy*/ {
     display: flex;
+    justify-content: center;
 }
 
 .buttonRules /*Flex son*/ {
+    flex-direction: column;
     justify-content: center;
     align-self: center;
+    flex-grow: 3;
 }
